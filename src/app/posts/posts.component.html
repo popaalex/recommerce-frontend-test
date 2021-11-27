@@ -1,1 +1,15 @@
-<p>posts works!</p>
+<app-header></app-header>
+<div class="main-container">
+  <app-loading-screen class="screen-w100" *ngIf="loading === true"></app-loading-screen>
+  <div class="posts-table">
+
+  </div>
+</div>
+
+<button
+  mat-fab
+  color="primary"
+  class="floating-btn"
+  [disabled]="loading === true"
+>+</button>
+

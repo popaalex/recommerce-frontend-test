@@ -1,0 +1,16 @@
+@import '/src/app/variables';
+
+.main-container{
+  width: 100%;
+  height: calc(100vh - 48px);
+  padding: 25px;
+}
+
+.floating-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: $primary;
+  font-size: 32px;
+  font-weight: 100;
+}
