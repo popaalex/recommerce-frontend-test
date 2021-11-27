@@ -15,6 +15,8 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
 import { HttpClientModule } from '@angular/common/http';
 
 import { ApiService } from './api.service';
+import { TeableHeaderComponent } from './teable-header/teable-header.component';
+import { TeablePostsComponent } from './teable-posts/teable-posts.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ApiService } from './api.service';
     PostsComponent,
     HeaderComponent,
     LoadingScreenComponent,
+    TeableHeaderComponent,
+    TeablePostsComponent,
   ],
   imports: [
     BrowserModule,
