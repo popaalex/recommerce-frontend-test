@@ -1,0 +1,46 @@
+@import '/src/app/variables';
+
+.rows-container{
+  width: 100%;
+  height: calc(100vh - 96px);
+  overflow: scroll;
+  border-top: 1px solid darken($primary, 10%);
+}
+
+.table-row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid darken($primary, 10%);
+}
+
+.brl{
+  border-left: 1px solid darken($primary, 10%);
+}
+
+.brr{
+  border-right: 1px solid darken($primary, 10%);
+}
+
+.w5{
+  width: 5%;
+}
+
+.w15{
+  width: 15%;
+}
+
+.table-cell{
+  padding-left: 6px;
+  font-size: 14px;
+}
+
+.table-cell-action{
+  padding: 10px;
+}
+
+.edit-btn{
+  width: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

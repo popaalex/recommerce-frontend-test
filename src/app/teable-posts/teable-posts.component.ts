@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-teable-posts',
@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teable-posts.component.scss']
 })
 export class TeablePostsComponent implements OnInit {
+  @Input() tableData : any
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.tableData)
+  }
+
+  setStringLengthDisplay(string : string){
+    let stringToDisplay
+
+    if(string.length > 15){
+      stringToDisplay = string.slice(0, 16) + '...'
+    }else {
+      stringToDisplay = string
+    }
+
+    return stringToDisplay
   }
 
 }

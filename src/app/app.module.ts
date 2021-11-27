@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +34,8 @@ import { TeablePostsComponent } from './teable-posts/teable-posts.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [
     ApiService,

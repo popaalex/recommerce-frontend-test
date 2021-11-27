@@ -1,1 +1,31 @@
-<p>teable-posts works!</p>
+<div class="rows-container">
+  <div class="table-row" *ngFor="let post of tableData">
+    <div class="table-cell w5 brl brr">
+      <span>{{post.id}}</span>
+    </div>
+    <div class="table-cell w15 brr">
+      <span>{{setStringLengthDisplay(post.title)}}</span>
+    </div>
+    <div class="table-cell w15 brr">
+      <span>{{setStringLengthDisplay(post.content)}}</span>
+    </div>
+    <div class="table-cell w15 brr">
+      <span>{{post.displayName}}</span>
+    </div>
+    <div class="table-cell w15 brr">
+      <span>{{post.displayCategory}}</span>
+    </div>
+    <div class="table-cell w15 brr">
+      <span>{{post.hits}}</span>
+    </div>
+    <div class="table-cell w15 brr">
+      <span>{{post.likes}}</span>
+    </div>
+    <div class="table-cell w5 brr">
+      <button class="edit-btn" mat-raised-button>
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+

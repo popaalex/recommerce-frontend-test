@@ -1,1 +1,6 @@
-<p>teable-header works!</p>
+<div class="table-head-container">
+  <div *ngFor="let cell of tableHeadInfo" [ngStyle]="{'width' : cell.cellWidth + '%' }" [ngClass]="cell.cellClass">
+    <span class="table-head-text">{{ cell.cellBody }}</span>
+  </div>
+</div>
+

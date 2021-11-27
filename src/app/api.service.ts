@@ -30,5 +30,11 @@ export class ApiService {
     return this.http.get(this.baseUrl + `/users`).toPromise();
   }
 
+  getUserById(id : any) {
+    return this.http.get(this.baseUrl + `/users/${id}`).toPromise();
+  }
 
+  getCategoryById(id : any) {
+    return this.http.get(this.baseUrl + `/categories/${id}`).toPromise();
+  }
 }
